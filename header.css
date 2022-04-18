@@ -7,18 +7,6 @@ body, html{
     padding: 0;         
 }
 
-.bgcover{
-         background-image: url("./image/main_bg.jpg");
-         position: absolute;
-         z-index: -1000;
-         width: 100%;
-         height: 3810px;
-         background-repeat: no-repeat;
-         background-position: center;
-         background-size: cover;
-         filter: blur(20px);    
-}
-
 header.main-content{
                     background: rgba(255,255,254,0.4);
                     position: sticky;
@@ -37,20 +25,27 @@ header.main-content{
 }
 
 .promotionbar{
-    position: absolute;  
-    width: 159px;
-    height: 266px;
-    right: 2px;
-    top: 90px;
-    z-index: 999;
+              position: absolute;  
+              width: 159px;
+              height: 266px;
+              right: -55px;
+              top: 180px;
+              z-index: 999;
 }
 
 .promotionbar img{
-                  width: 40px;  
+                  width: 100px;  
+}
+
+.a-rg{
+      position: absolute;
+      top: 34%;
+      left: 25px;
 }
 
 .a-rg img{
-          width: 12px;
+          width: 50px;
+
 }
 
 .main-content-wrapper::after{
@@ -60,11 +55,11 @@ header.main-content{
 }
 
 .main-content-wrapper>.menu{
-              width: 444px;
-              height: 24.45px;
-              float: right;
-              margin-top: 1%;
-              
+                            width: 444px;
+                            height: 24.45px;
+                            float: right;
+                            margin-top: 1%;
+                            
 }
 
 .warpper-logo{
@@ -104,40 +99,40 @@ header.main-content{
 
 /* 門市據點子選單效果 */
 .locations{
-    position: relative;
+           position: relative;
 }
 
 .locations ul{
-       position: absolute;
-       top: 27px;
-       width: 78px;
+              position: absolute;
+              top: 27px;
+              width: 78px;
 }
 
 .locations li{
-       margin-bottom: 8px;
+              margin-bottom: 8px;
 }
 
 /* 深度體驗子選單效果 */
 .experiences{
-    position: relative;
+             position: relative;
 }
 
 .experiences ul{
-       position: absolute;
-       top: 27px;
-       width: 78px;
-}
+                position: absolute;
+                top: 27px;
+                width: 78px;
+        }
 
 .experiences li{
-       margin-bottom: 8px;
+                margin-bottom: 8px;
 }
 
 .same ul{
-    display: none;    
+         display: none;    
 }
 
 .same:hover ul{
-    display:block
+               display:block
 }
 
 .same:hover li{
@@ -155,26 +150,26 @@ header.main-content{
 }
 
 .pagevalue{
-        /* outline: 1px blue solid; */
-        margin: 0 auto;
-        width: 542px;
-        height: 89px;
-        background: rgba(31, 31, 31, 0.4);
+           /* outline: 1px blue solid; */
+           margin: 0 auto;
+           width: 542px;
+           height: 89px;
+           /* background: rgba(31, 31, 31, 0.4); */
          
         
 }
 
 .pagevalue h1{
-           font-size: 30px;
-           font-weight: 700;
-           letter-spacing: 0.1em;
-           color: #E2C286;
-           text-align: center;
-           width: 190px;
-           line-height: 89px;
-           padding-bottom: 0px;
-           margin: 0 auto;
-           text-decoration: underline;
-           text-underline-offset: 6px;
-           text-decoration-thickness: 3px;
+              font-size: 30px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              color: #E2C286;
+              text-align: center;
+              width: 190px;
+              line-height: 89px;
+              padding-bottom: 0px;
+              margin: 0 auto;
+              text-decoration: underline;
+              text-underline-offset: 6px;
+              text-decoration-thickness: 3px;
 }

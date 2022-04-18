@@ -1,20 +1,13 @@
-/* 右側浮動廣告 */
-.promotion-wrapper{
-    width: 1200px;
-    height: 140px;
-    margin: 0 auto;
-}
-
-.promotionbar{
-    width: 1200px;
-    
-    display: inline-flex;
-    flex-direction: row-reverse;
-}
-
-.promotionbar:first-child{
-    height:  140px;
-    position: sticky;
+.bgcover{
+        background-image: url("./image/main_bg.jpg");
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        height: 1612px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: blur(20px);    
 }
 
 /* 說明當前頁面產品種類 */
