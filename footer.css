@@ -1,0 +1,116 @@
+@import url(reset.css);
+ 
+.end-of-the-page{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container{
+     width: 1200px;
+     height: 216px;
+     background: #E2C286;
+     display: inline-block;
+}
+
+.top-footer{
+width: 1200px;
+height: 108px;
+display: inline-flex;
+}
+
+.logowrapper{
+/* border-right: 1px black solid; */
+width: 400px;
+height: 108px;
+
+}
+
+.manuwrapper{
+/* outline: 1px green solid; */
+width: 400px;
+height: 108px;
+}
+
+.manuwrapper ul{
+   /* outline: 1PX solid black; */
+   width: 392px;
+   height: 20px;
+   margin-top: 40px;
+   display: inline-flex;
+   justify-content: space-evenly;
+}
+
+.manuwrapper li{
+   height: 20px;
+}
+
+.manuwrapper a{
+  text-decoration: none;
+  font-family: 'Delius Unicase';
+  font-style: bold;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.mediawrapper{
+ width: 400px;
+ height: 108px;
+ box-sizing: border-box;
+ font-size: 38px;
+ letter-spacing: 8px;
+ line-height: 108px;
+ padding-left: 14%;
+}
+
+.media a{
+/* outline: 1px black solid; */
+}
+
+.facebook{
+color: #7287A9;
+display: inline-block;
+}
+
+.twitter{
+color: #1DA1F2;
+display: inline-block;
+}
+
+.bot-footer{
+width: 1200px;
+height: 108px;
+/* border-top: 1px solid  red; */
+display: inline-flex;
+}
+
+.copyright{
+/* border-right: 1px solid #FFFFFF;  */
+width: 400px;
+height: 108px;
+line-height: 108px;
+font-family: 'Days One';
+
+font-size: 20px;
+color: #FFFFFF;
+}
+
+.copyright b{
+font-weight: 1000;
+}
+
+.annoucement{
+width: 800px;
+height: 108px;
+line-height: 108px;
+text-align: center; 
+font-family: 'Delius Unicase';
+font-style: normal;
+font-weight: 1000;
+font-size: 18px;
+color: #FFFFFF;  
+}

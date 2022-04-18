@@ -1,0 +1,442 @@
+@import url(reset.css);
+
+body, html{
+    margin: 0;
+    padding: 0;         
+}
+
+.bgcover{
+         background-image: url(/image/main_bg.jpg);
+         position: absolute;
+         z-index: -1000;
+         width: 100%;
+         height: 3810px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+         filter: blur(20px);    
+}
+
+header.main-content{
+                    background: rgba(255,255,254,0.4);
+                    position: sticky;
+                    top: 0;
+                    margin:  0 auto;
+                    border-bottom-right-radius: 12px;
+                    border-bottom-left-radius: 12px;
+                    z-index: 999;
+}
+
+.main-content-wrapper{
+                      width: 1200px;
+                      height: 63px;
+                      margin: 0 auto;
+}
+
+.main-content-wrapper::after{
+                            content: "";
+                            display: block;
+                            clear: both;
+
+}
+
+.main-content-wrapper>.menu{
+              width: 444px;
+              height: 24.45px;
+              float: right;
+              margin-top: 1%;
+              
+}
+
+.warpper-logo{
+              /* outline: 5px solid blue; */
+              margin-left: 63px;
+              width: 63px;
+              float: left;
+              
+}
+
+.warpper-logo img{
+                  width: 63px; 
+                    
+}
+
+.menu{
+      /* outline: 1px solid yellow; */
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+/* 產品目錄子選單效果 */
+.product{
+         position: relative;
+}
+
+.product ul{
+            position: absolute;
+            top: 27px;
+            width: 78px;
+}
+
+.product li{
+            margin-bottom: 8px;
+}
+
+/* 門市據點子選單效果 */
+.locations{
+    position: relative;
+}
+
+.locations ul{
+       position: absolute;
+       top: 27px;
+       width: 78px;
+}
+
+.locations li{
+       margin-bottom: 8px;
+}
+
+/* 深度體驗子選單效果 */
+.experiences{
+    position: relative;
+}
+
+.experiences ul{
+       position: absolute;
+       top: 27px;
+       width: 78px;
+}
+
+.experiences li{
+       margin-bottom: 8px;
+}
+
+.same ul{
+    display: none;    
+}
+
+.same:hover ul{
+    display:block
+}
+
+.same:hover li{
+               border-bottom: 3px #E2C286 solid;
+}
+
+.menu a{
+        text-decoration: none;
+        font-family: 'Delius Unicase';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #E2C081;
+}
+
+article{
+        /* outline: 1px blue solid; */
+        margin: 0 auto;
+        margin-top: 19px;
+        width: 238px;
+        height: 89px;
+        position: relative;
+        top: 1px       
+}
+
+article h1{
+           font-size: 30px;
+           font-weight: 700;
+           letter-spacing: 0.1em;
+           color: #E2C286;
+           text-align: center;
+           border-bottom: solid;
+           width: 190px;
+           margin-left: 24px;
+           line-height: 1;
+           padding-bottom: 6px;
+}
+
+main{
+     width: 1200px;
+     height: 2641px;
+     margin: 0 auto;
+     margin-top: 200px;
+}
+
+/* 主商頁內容部分 */
+.container-top{
+               /* outline: 1px solid black;  */
+               width: 1200px;
+               height: 2621px;
+               margin: 0 auto;
+               background-color: rgba(31, 31, 31, 0.4); 
+}
+
+/* 活動上半部 */
+.sec-top{
+         /* outline: 5px solid blue; */
+         width: 1200px;
+         height: 665px;
+}
+
+.left1{
+      /* outline: 1px solid orange; */
+      width: 583px;
+      height: 665px;
+      display: inline-block;
+}
+
+.left-left{
+           /* outline: 1px solid red;  */
+           width: 248px;
+           height: 665px;
+           display: inline-block;
+}
+
+.left-left img{
+               display: block;
+}
+
+.left-right{
+            width: 321px;
+            height: 665px;
+            display: inline-block;
+            margin-left: 10px;
+}
+
+.right1{
+       /* outline: 1px solid red; */
+       width: 583px;
+       height: 665px;
+       display: inline-block;
+       margin-left: 30px;
+       position: relative;
+}
+
+.right1 .knowmore{
+                 position: absolute;   
+                 right: 50%;
+                 top: 76%;
+                 transform: translateX(50%);
+
+
+}
+/* 活動中段 */
+.sec-mid{
+        /* outline: 1px solid red; */
+        width: 1200px;
+        height: 665px;
+        margin-top: 94px;
+}
+
+.sec-mid .left2{
+                display: inline-block;
+} 
+    
+.sec-mid .right2{
+                 display: inline-block; 
+                 margin-left: 32px; 
+}
+
+/* 活動下部份 */
+.sec-bot{
+         /* outline: 1px solid red;    */
+         width: 1200px;
+         height: 665px;
+         margin-top: 94px;
+         margin-bottom: 94px;
+}
+
+.sec-bot .left3{
+                display: inline-block;
+} 
+
+.sec-bot .right3{
+                 display: inline-block;
+                 margin-left: 32px;
+}
+
+/* 會員卡區塊 */
+.membershipcard-section{
+                        /* outline: 1px solid  #E2C286;  */
+                        width: 1200px;
+                        height: 344px;
+                        display: flex; /*讓會員卡的div區塊水平排列*/
+}
+
+.membershipcard-section .right4{
+                                position: relative;
+}
+
+.right4 .knowmore{
+                  position: absolute;
+                  top: 84%;
+                  left:50%;
+                  transform: translateX(-50%);
+}
+
+.membershipcard-section .left4{
+                               position: relative; 
+}
+
+.left4 .knowmore{
+                position: absolute;
+                top: 84%;
+                left:50%;
+                transform: translateX(-50%);
+}
+
+.warpper-container-bot{
+                       /* border-top: 1px solid black;  */
+                       width: 100%;
+                       text-align: center; /*下方div區塊置中*/
+}
+
+.container-bot{
+               /* outline: 1px solid #E2C081; */
+               width: 1200px;
+               height: 790px;
+               display: inline-flex; /*子層div區塊水平排列*/
+               padding-top: 94px;
+               box-sizing: border-box;
+               background-color: rgba(31, 31, 31, 0.4);
+}
+
+.container-bot .container-left{
+                               font-size: 0; 
+                               
+}
+
+.container-bot .container-mid{
+                              font-size: 0;
+}
+
+.container-bot .container-right{
+                                font-size: 0;
+}
+
+.spaceforlayout a{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* 頁尾部份 */
+.end-of-the-page{
+                 width: 100%;
+                 text-align: center;
+}
+
+.footer-container{
+                  width: 1200px;
+                  height: 216px;
+                  background: #E2C286;
+                  display: inline-block;
+}
+
+.top-footer{
+            width: 1200px;
+            height: 108px;
+            display: inline-flex;
+}
+
+.logowrapper{
+             /* border-right: 1px black solid; */
+             width: 400px;
+             height: 108px;
+             
+}
+
+.manuwrapper{
+             /* outline: 1px green solid; */
+             width: 400px;
+             height: 108px;
+}
+
+.manuwrapper ul{
+                /* outline: 1PX solid black; */
+                width: 392px;
+                height: 20px;
+                margin-top: 40px;
+                display: inline-flex;
+                justify-content: space-evenly;
+}
+
+.manuwrapper li{
+                height: 20px;
+}
+
+.manuwrapper a{
+               text-decoration: none;
+               font-family: 'Delius Unicase';
+               font-style: bold;
+               font-size: 10px;
+               font-weight: 400;
+               line-height: 20px;
+               letter-spacing: 1px;
+               text-align: center;
+               color: #FFFFFF;
+    
+}
+
+.mediawrapper{
+              width: 400px;
+              height: 108px;
+              box-sizing: border-box;
+              font-size: 38px;
+              letter-spacing: 8px;
+              line-height: 108px;
+              padding-left: 14%;
+}
+
+.media a{
+         /* outline: 1px black solid; */
+}
+
+.facebook{
+          color: #7287A9;
+          display: inline-block;
+}
+
+.twitter{
+         color: #1DA1F2;
+         display: inline-block;
+}
+
+.bot-footer{
+            width: 1200px;
+            height: 108px;
+            /* border-top: 1px solid  red; */
+            display: inline-flex;
+}
+
+.copyright{
+           /* border-right: 1px solid #FFFFFF;  */
+           width: 400px;
+           height: 108px;
+           line-height: 108px;
+           font-family: 'Days One';
+
+           font-size: 20px;
+           color: #FFFFFF;
+}
+
+.copyright b{
+             font-weight: 1000;
+}
+
+.annoucement{
+             width: 800px;
+             height: 108px;
+             line-height: 108px;
+             text-align: center; 
+             font-family: 'Delius Unicase';
+             font-style: normal;
+             font-weight: 1000;
+             font-size: 18px;
+             color: #FFFFFF;  
+}
