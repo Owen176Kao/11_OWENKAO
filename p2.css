@@ -29,15 +29,6 @@
            color: #E2C286;
 }
 
-.promotionbar{
-              width: 159px;
-              height: 266px;
-              position: sticky;
-              left: 58%;
-              top: 16%;
-              z-index: 999;
-}
-
 /* 故事第一章區塊 */
 .wrapper-1{
            /* outline: 1px red solid; */

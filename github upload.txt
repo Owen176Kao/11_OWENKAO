@@ -1,0 +1,7 @@
+1. $git status(確認狀況用,養成良好習慣)
+
+2.$git add .(點前面有空格)
+
+3.$git commit -m "(可備註)"
+
+4.$git push(正式上傳最新版本到github)

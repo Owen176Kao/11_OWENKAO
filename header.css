@@ -30,16 +30,33 @@ header.main-content{
 }
 
 .main-content-wrapper{
+                      position: relative;  
                       width: 1200px;
                       height: 63px;
                       margin: 0 auto;
+}
+
+.promotionbar{
+    position: absolute;  
+    width: 159px;
+    height: 266px;
+    right: 2px;
+    top: 90px;
+    z-index: 999;
+}
+
+.promotionbar img{
+                  width: 40px;  
+}
+
+.a-rg img{
+          width: 12px;
 }
 
 .main-content-wrapper::after{
                             content: "";
                             display: block;
                             clear: both;
-
 }
 
 .main-content-wrapper>.menu{
