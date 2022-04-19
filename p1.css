@@ -15,137 +15,20 @@ body, html{
          background-position: center;
          background-size: cover;
          filter: blur(20px);    
-}
+}             
 
-header.main-content{
-                    background: rgba(255,255,254,0.4);
-                    position: sticky;
-                    top: 0;
-                    margin:  0 auto;
-                    border-bottom-right-radius: 12px;
-                    border-bottom-left-radius: 12px;
-                    z-index: 999;
-}
-
-.main-content-wrapper{
-                      width: 1200px;
-                      height: 63px;
-                      margin: 0 auto;
-}
-
-.main-content-wrapper::after{
-                            content: "";
-                            display: block;
-                            clear: both;
-
-}
-
-.main-content-wrapper>.menu{
-              width: 444px;
-              height: 24.45px;
-              float: right;
-              margin-top: 1%;
-              
-}
-
-.warpper-logo{
-              /* outline: 5px solid blue; */
-              margin-left: 63px;
-              width: 63px;
-              float: left;
-              
-}
-
-.warpper-logo img{
-                  width: 63px; 
-                    
-}
-
-.menu{
-      /* outline: 1px solid yellow; */
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-/* 產品目錄子選單效果 */
-.product{
-         position: relative;
-}
-
-.product ul{
-            position: absolute;
-            top: 27px;
-            width: 78px;
-}
-
-.product li{
-            margin-bottom: 8px;
-}
-
-/* 門市據點子選單效果 */
-.locations{
-    position: relative;
-}
-
-.locations ul{
-       position: absolute;
-       top: 27px;
-       width: 78px;
-}
-
-.locations li{
-       margin-bottom: 8px;
-}
-
-/* 深度體驗子選單效果 */
-.experiences{
-    position: relative;
-}
-
-.experiences ul{
-       position: absolute;
-       top: 27px;
-       width: 78px;
-}
-
-.experiences li{
-       margin-bottom: 8px;
-}
-
-.same ul{
-    display: none;    
-}
-
-.same:hover ul{
-    display:block
-}
-
-.same:hover li{
-               border-bottom: 3px #E2C286 solid;
-}
-
-.menu a{
-        text-decoration: none;
-        font-family: 'Delius Unicase';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        color: #E2C081;
-}
-
-article{
+.article-p1{
         /* outline: 1px blue solid; */
         margin: 0 auto;
         margin-top: 19px;
         width: 238px;
         height: 89px;
-        position: relative;
+        /* position: relative; */
         top: 1px       
 }
 
-article h1{
+.article-p1 h1{
+           margin: 0 auto;
            font-size: 30px;
            font-weight: 700;
            letter-spacing: 0.1em;
@@ -182,10 +65,10 @@ main{
 }
 
 .left1{
-      /* outline: 1px solid orange; */
-      width: 583px;
-      height: 665px;
-      display: inline-block;
+       /* outline: 1px solid orange; */
+       width: 583px;
+       height: 665px;
+       display: inline-block;
 }
 
 .left-left{
@@ -207,28 +90,27 @@ main{
 }
 
 .right1{
-       /* outline: 1px solid red; */
-       width: 583px;
-       height: 665px;
-       display: inline-block;
-       margin-left: 30px;
-       position: relative;
+        /* outline: 1px solid red; */
+        width: 583px;
+        height: 665px;
+        display: inline-block;
+        margin-left: 30px;
+        position: relative;
 }
 
 .right1 .knowmore{
-                 position: absolute;   
-                 right: 50%;
-                 top: 76%;
-                 transform: translateX(50%);
-
-
+                  position: absolute;   
+                  right: 50%;
+                  top: 76%;
+                  transform: translateX(50%);
 }
+
 /* 活動中段 */
 .sec-mid{
-        /* outline: 1px solid red; */
-        width: 1200px;
-        height: 665px;
-        margin-top: 94px;
+         /* outline: 1px solid red; */
+         width: 1200px;
+         height: 665px;
+         margin-top: 94px;
 }
 
 .sec-mid .left2{
@@ -282,10 +164,10 @@ main{
 }
 
 .left4 .knowmore{
-                position: absolute;
-                top: 84%;
-                left:50%;
-                transform: translateX(-50%);
+                 position: absolute;
+                 top: 84%;
+                 left:50%;
+                 transform: translateX(-50%);
 }
 
 .warpper-container-bot{
@@ -332,12 +214,12 @@ main{
 }
 
 .spaceforlayout a{
-    display: block;
-    width: 50px;
-    height: 94px;
-    margin: 0 auto;
-    padding-top: 10px;
-    box-sizing: border-box;
+                  display: block;
+                  width: 50px;
+                  height: 94px;
+                  margin: 0 auto;
+                  padding-top: 10px;
+                  box-sizing: border-box;
 }
 
 .footer-container{

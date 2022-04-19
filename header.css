@@ -1,7 +1,5 @@
 @import url(reset.css);
 
-@import url(reset.css);
-
 body, html{
     margin: 0;
     padding: 0;         
@@ -67,7 +65,6 @@ header.main-content{
               margin-left: 63px;
               width: 63px;
               float: left;
-              
 }
 
 .warpper-logo img{
@@ -121,7 +118,7 @@ header.main-content{
                 position: absolute;
                 top: 27px;
                 width: 78px;
-        }
+}
 
 .experiences li{
                 margin-bottom: 8px;
@@ -132,7 +129,7 @@ header.main-content{
 }
 
 .same:hover ul{
-               display:block
+               display:block;
 }
 
 .same:hover li{

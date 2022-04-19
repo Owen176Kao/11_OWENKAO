@@ -177,7 +177,18 @@
 }
 
 .section-6{
-           /* outline: 1px solid olivedrab;  */
+           outline: 1px solid olivedrab; 
            width: 1000px;
            height: 200px; 
 }
+
+.section-6::before{
+                   content: "";
+}
+
+.section-6::after{
+                  content: "";
+}
+
+.decoration-line{}
+

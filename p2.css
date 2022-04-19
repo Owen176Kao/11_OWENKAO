@@ -1,13 +1,13 @@
 .bgcover{
-        background-image: url("./image/main_bg.jpg");
-        position: absolute;
-        z-index: -1000;
-        width: 100%;
-        height: 2568px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        filter: blur(20px);    
+         background-image: url("./image/main_bg.jpg");
+         position: absolute;
+         z-index: -1000;
+         width: 100%;
+         height: 2568px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+         filter: blur(20px);    
 }
 
 .mid-bg-dressing{
@@ -25,9 +25,9 @@
         width: 1200px;
         height: 142px;
         position: absolute;
-        top: 7%;
+        top: 154px;
         left: 50%;
-        transform: translateX(-600px);
+        transform: translateX(-590px);
 }
 
 .slogan h1{
@@ -41,7 +41,7 @@
            color: #E2C286;
 }
 
-/* 故事第一章區塊 */
+/* 故事第一章 */
 .wrapper-1{
            /* outline: 1px red solid; */
            width: 1200px;
@@ -105,7 +105,7 @@
                height: 500px;
 }
 
-/* 故事第二區塊 */
+/* 故事第二章 */
 .wrapper-2{
            /* outline: 1px red solid; */
            width: 1200px;
@@ -167,7 +167,7 @@
                    margin: 0 auto;
 }
 
-/* 故事第三區塊 */
+/* 故事第三章 */
 .wrapper-3{
            /* outline: 1px red solid; */
            width: 1200px;
@@ -230,7 +230,7 @@
                height: 500px;
 }
 
-/* 故事第四區塊 */
+/* 故事第四章 */
 .wrapper-4{
            /* outline: 1px red solid; */
            width: 1200px;
@@ -289,6 +289,6 @@
 }
 
 .story-4-right .story4{
-                   display: block;
-                   margin: 0 auto;
+                       display: block;
+                       margin: 0 auto;
 }  
