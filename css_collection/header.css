@@ -1,0 +1,547 @@
+@import url(reset.css);
+
+body, html{
+    margin: 0;
+    padding: 0;         
+}
+
+header.main-content{
+                    background: rgb(26 26 25 / 80%);
+                    position: sticky;
+                    top: 0;
+                    margin:  0 auto;
+                    z-index: 999;
+}
+
+.main-content-wrapper{
+                      position: relative;  
+                      width: 1200px;
+                      height: 66px;
+                      margin: 0 auto;
+}
+
+/* .promotionbar{
+              position: absolute;  
+              width: 159px;
+              height: 266px;
+              right: -55px;
+              top: 180px;
+              z-index: 999;
+}
+
+.promotionbar img{
+                  width: 100px;  
+} */
+
+/* .a-rg{
+      position: absolute;
+      top: 34%;
+      left: 25px;
+}
+
+.a-rg img{
+          width: 50px;
+
+} */
+
+.main-content-wrapper::after{
+                            content: "";
+                            display: block;
+                            clear: both;
+}
+
+.main-content-wrapper>.menu{
+                            width: 550px;
+                            height: 24.45px;
+                            float: right;
+                            margin-top: 1.5%;
+                            
+}
+
+.warpper-logo{
+              /* outline: 5px solid blue; */
+              /* margin-left: 63px; */
+              float: left;
+}
+
+.warpper-logo img{
+                  width: 63px;
+                  filter: drop-shadow(4px 8px 3px rgba(0, 0, 0, 0.1)); 
+                    
+}
+
+.menu{
+      /* outline: 1px solid yellow; */
+      display: flex;
+      align-items: center;
+}
+
+.menu>ul{
+         display: flex;
+         width: 540px;
+         justify-content: space-between;
+}    
+
+.menu>ul li{
+   position: relative;
+}
+
+.menu ul>li::after{
+                  content: "";
+                  position: absolute;
+                  top: 9px;
+                  left: -30px;
+                  width: 0px;
+                  height: 1.5px;
+                  background-color: rgba(226, 192, 129, 1);
+                  transition: .8s;
+}
+
+.menu ul>li:hover::after{
+                        display: block;
+                        top: 9px;
+                        left: -12px;
+                        width: 60px;
+                        height: 1.5px;
+                        transform: translateX(10px);
+}
+
+.menu ul>li:hover a{
+                  opacity: .8;
+}
+
+.hamburger {
+    padding: 15px 15px;
+    display: none;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; 
+}
+
+    .hamburger:hover {
+      opacity: 0.7; }
+
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: rgba(44, 50, 54, 1); }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: rgba(44, 50, 54, 1);
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+
+    .hamburger-inner::before {
+      top: -10px; }
+
+    .hamburger-inner::after {
+      bottom: -10px; }
+
+.hamburger--spin .hamburger-inner {
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--spin .hamburger-inner::before {
+      transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+    .hamburger--spin .hamburger-inner::after {
+      transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  
+  .hamburger--spin.is-active .hamburger-inner {
+    transform: rotate(225deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+    .hamburger--spin.is-active .hamburger-inner::before {
+      top: 0;
+      opacity: 0;
+      transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+
+    .hamburger--spin.is-active .hamburger-inner::after {
+      bottom: 0;
+      transform: rotate(-90deg);
+      transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  
+  /*
+     * Spin Reverse
+     */
+  .hamburger--spin-r .hamburger-inner {
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+    .hamburger--spin-r .hamburger-inner::before {
+      transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+
+    .hamburger--spin-r .hamburger-inner::after {
+      transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  
+  .hamburger--spin-r.is-active .hamburger-inner {
+    transform: rotate(-225deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+    .hamburger--spin-r.is-active .hamburger-inner::before {
+      top: 0;
+      opacity: 0;
+      transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+
+    .hamburger--spin-r.is-active .hamburger-inner::after {
+      bottom: 0;
+      transform: rotate(90deg);
+      transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/* 產品目錄 子選單效果 */
+.product-coffee{
+                position: absolute;
+                top: 100%;
+                left: 68%;
+                width: 95px;
+                height: 0px;
+                overflow: hidden;
+                background: rgb(26 26 25 / 80%);           
+                border-bottom-left-radius: 25%;
+                border-bottom-right-radius: 25%;
+                /* border: 4px solid #E2C081; */
+                transition: .5s;
+}
+
+.product-coffee.on{
+
+}
+
+.product-coffee li{
+                   box-sizing: border-box;
+                   padding: 4px 0px;
+                   text-align: center;
+}   
+
+.product-coffee li:not(:last-child){
+                                    border-bottom: 3px solid #E2C081;
+                                    border-collapse: collapse;
+}
+
+/* 門市據點子選單效果 */
+.locations-shops{
+                 display: block;
+                 position: absolute;
+                 top: 100%;
+                 left: 75%;
+                 width: 95px;
+                 height: 0px;
+                 overflow: hidden;
+                 background: rgb(26 26 25 / 80%);
+                 text-align: center;
+                 border-bottom-left-radius: 25%;
+                 border-bottom-right-radius: 25%;
+                 /* border: 4px solid #E2C081; */
+                 transition: .5s;
+}
+    
+
+.locations-shops li{
+                   box-sizing: border-box;
+                   padding: 4px 0px;
+}
+
+.locations-shops li:not(:last-child){
+                                    border-bottom: 3px solid #E2C081;
+                                    border-collapse: collapse;
+}
+
+/* 深度體驗子選單效果 */
+.experiences-lessons{
+                     display: block;
+                     position: absolute;
+                     top: 100%;
+                     left: 82%;
+                     width: 95px;
+                     height: 0px;
+                     overflow: hidden;
+                     background: rgb(26 26 25 / 80%);
+                     text-align: center;
+                     border-bottom-left-radius: 25%;
+                     border-bottom-right-radius: 25%;
+                     /* border: 4px solid #E2C081; */
+                     transition: .5s;
+}
+
+.experiences-lessons li{
+                        box-sizing: border-box;
+                        padding: 4px 0px;
+}
+
+.experiences-lessons li:not(:last-child){
+                                         border-bottom: 3px solid #E2C081;
+                                         border-collapse: collapse;
+}
+/* 子選單調整結束---------------------------------------------------------- */
+
+.same li{
+         border-bottom: 3px #E2C286 solid;
+}
+
+.menu a{
+        text-decoration: none;
+        font-family: 'Delius Unicase';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #E2C081;
+}
+
+.pagevalue{
+           /* outline: 1px blue solid; */
+           margin: 0 auto;
+           width: 542px;
+           height: 89px;
+           /* background: rgba(31, 31, 31, 0.4); */
+         
+        
+}
+
+.pagevalue h1{
+              font-size: 30px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              color: #E2C286;
+              text-align: center;
+              width: 190px;
+              line-height: 89px;
+              padding-bottom: 0px;
+              margin: 0 auto;
+              text-decoration: underline;
+              text-underline-offset: 6px;
+              text-decoration-thickness: 3px;
+}
+
+/* 414斷點---------------------------------------- */
+@media screen and (max-width: 414px){
+header.main-content {
+        background: rgba(226, 194, 134, 1);
+        top: -1px;
+}
+
+.main-content-wrapper{ 
+              width: 100%;
+              height: 66px;
+              box-shadow: 3px 6px 6px -5px rgb(0, 0, 0, 65%)
+}
+
+/* .promotionbar{
+      position: absolute;  
+      width: 159px;
+      height: 266px;
+      right: -55px;
+      top: 180px;
+      z-index: 999;
+} */
+
+/* .promotionbar img{
+          width: 100px;   */
+
+/* .a-rg{
+position: absolute;
+top: 34%;
+left: 25px;
+}
+
+.a-rg img{
+  width: 50px;
+
+} */
+
+/* .main-content-wrapper::after{
+                    content: "";
+                    display: block;
+                    clear: both;
+} */
+
+.main-content-wrapper>.menu{
+                    width: 100%;
+                    height: auto;
+                    float: none;
+                    margin-top: 0;
+}
+
+.warpper-logo{}
+
+.warpper-logo img{
+          width: 63px; 
+}
+
+.hamburger{
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}    
+
+.menu>ul{
+ display: flex;
+ flex-direction: column;
+ width: 414px;
+ height: 0px;
+ overflow: hidden;
+ background-color: rgba(44, 50, 54, 1);
+ /* justify-content: space-between; */
+ transition: .6s;
+}    
+
+.menu>ul li:not(:last-child){
+box-sizing: border-box;
+padding-bottom: 4px;
+line-height: 38px;
+text-align: center;
+border-bottom: 1.5px solid rgba(226, 194, 134, 1);
+}
+
+.menu>ul li:last-child{
+box-sizing: border-box;
+padding-bottom: 4px;
+line-height: 38px;
+text-align: center;
+}
+
+.menu ul>li::after{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -64px;
+    width: 0;
+    height: 1.5px;
+    background-color: rgba(226, 192, 129, 1);
+    /* transition: .8s; */
+}
+
+.menu ul>li:hover::after{
+          display: block;
+          top: 9px;
+          left: -64px;
+          width: 0px;
+          height: 0px;
+          transform: translateX(0px);
+}
+
+/* 產品目錄子選單效果 */
+.product{
+ position: relative;
+}
+
+.product ol{
+    position: absolute;
+    top: 27px;
+    width: 78px;
+}
+
+.product li{
+    margin-bottom: 8px;
+}
+
+/* 門市據點子選單效果 */
+.locations{
+   position: relative;
+}
+
+.locations ol{
+      position: absolute;
+      top: 27px;
+      width: 78px;
+}
+
+.locations li{
+      margin-bottom: 8px;
+}
+
+/* 深度體驗子選單效果 */
+.experiences{
+     position: relative;
+}
+
+.experiences ol{
+        position: absolute;
+        top: 27px;
+        width: 78px;
+}
+
+.experiences li{
+        margin-bottom: 8px;
+}
+
+.same ul{
+ display: none;    
+}
+
+.same:hover ol{
+       display:block;
+}
+
+.same li{
+       border-bottom: 3px #E2C286 solid;
+}
+
+.menu a{
+text-decoration: none;
+font-family: 'Delius Unicase';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+color: #E2C081;
+}
+
+.pagevalue{
+   /* outline: 1px blue solid; */
+   margin: 0 auto;
+   width: 542px;
+   height: 89px;
+   /* background: rgba(31, 31, 31, 0.4); */
+ 
+
+}
+
+.pagevalue h1{
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #E2C286;
+      text-align: center;
+      width: 190px;
+      line-height: 89px;
+      padding-bottom: 0px;
+      margin: 0 auto;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 3px;
+}
+
+}

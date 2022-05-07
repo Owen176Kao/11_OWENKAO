@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='shoppingcar.css'>
+</head>
+<body>
+    <a href="#">前往結帳</a>
+    <table style=border:1px class="table">
+        <thead>
+            <tr>
+                <th>編號</th>
+                <th>書名</th>
+                <th>出版商</th>
+                <th>價錢</th>
+                <th>作者</th>
+                <th>圖</th>
+                <th>架構</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>突破困境:資安開圓工具應用</td>
+                <td>博碩文化</td>
+                <td>429</td>
+                <td>高文恩</td>
+                <td></td>
+                <td>加入</td>
+            </tr>
+        </tbody>
+    </table> 
+
+    <script>
+        const base64Prefix = 'data:image/*;base64';
+        const tbody = document.querySelector('tbody');
+        const url = 'http://192.168.50.241:8080/javascript-shoppingcart-book/book/readAll'
+        fetch(url)
+            .then(resp => resp.json())
+            .then(booklist =>{
+                for (let book of booklist){
+                    const {id, title, companyName, unitPrice, author, img} = book;
+                    tbody.insertAdjacentHTML('beforeend',`  <tr>
+                                                                <td>${id}</td>
+                                                                <td>${title}</td>
+                                                                <td>${companyName}</td>
+                                                                <td>${unitPrice}</td>
+                                                                <td>${author}</td>
+                                                                <td><img src="${base64Prefix}, ${img}" style="width: 200px;"></td>
+                                                                <td>
+                                                                    <button onclick="addItem(${id}, '${title}', ${unitPrice})">加入</button>
+                                                                </td>
+                                                            </tr>`)
+                }
+
+            });
+
+            const shoppingCar = [];
+            function addItem(id, title, unitPrice) {
+                  shoppingCar.push({id, title, unitPrice});  
+            }
+
+            document.querySelector('a').addEventListener('click', e => {
+                sessionStorage.setItem('shoppingCar', JSON.stringify(shoppingCar));
+                location = 'result.html'
+                e.preventDefault();
+            })
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    </ul>
+
+    <script>
+        let total = 0;
+        const ul = document.querySelector('ul');
+        const shoppingCar = JSON.parse(sessionStorage.getItem('shoppingCar'));
+        for (let item of shoppingCar) {
+            ul.insertAdjacentHTML('beforeend', `<li>${item.id} ${item.title} ${item.unitPrice}</li>`);
+            total += item.unitPrice;
+        }
+        document.body.insertAdjacentHTML('beforeend', `<div>${total}</div>`)
+    </script>
+</body>
+</html>
+
+<!-- `<li>${item.id} ${item.title} ${item.unitPrice}</li>`
+
+'<li>' + item.id + item.title + item.unitPrice'</li>' -->

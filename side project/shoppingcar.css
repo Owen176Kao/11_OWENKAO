@@ -1,0 +1,6 @@
+@import url(reset.css);
+
+.table{
+    outline: 1px solid red;
+    margin: 0 auto;
+}

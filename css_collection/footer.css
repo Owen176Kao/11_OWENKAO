@@ -1,0 +1,250 @@
+@import url(reset.css);
+
+/* totop 紙飛機 */
+.totop{
+        width: auto;
+        bottom: 60%;
+        right: 5%;
+        position: fixed;
+        text-align: center;
+        transition: .5s;
+}
+ 
+.totop img{
+        width: 50px; 
+}
+ 
+.totop span{
+             display: block;    
+             color: #E2C286;
+             font-size: 28px;
+             font-weight: bolder;
+             outline: 3px dotted;
+}
+
+.end-of-the-page{
+    width: 100%;
+    text-align: center;
+    /* background-color: rgb(226, 194, 134); */
+}
+
+.footer-container{
+     width: 1200px;
+     height: 216px;
+     display: inline-block;
+}
+
+.top-footer{
+width: 1200px;
+height: 108px;
+display: inline-flex;
+}
+
+.logowrapper{
+/* border-right: 1px black solid; */
+width: 400px;
+height: 108px;
+}
+
+.manuwrapper{
+/* outline: 1px green solid; */
+width: 400px;
+height: 108px;
+}
+
+.ty-search{
+           text-align: left;
+           padding: 6px;
+           border-style: hidden;
+           border-radius: 50px;
+           border-width: 0px;
+           font-size: 20px;
+           color: #b3a6b3;
+           border-color: #120412;
+           background-color: #ffffff;
+           box-shadow: 1px 2px 3px 0px rgb(217 91 89 / 30%);
+}
+
+.mediawrapper{
+ width: 400px;
+ height: 108px;
+ box-sizing: border-box;
+ font-size: 38px;
+ letter-spacing: 8px;
+ line-height: 108px;
+ padding-left: 14%;
+}
+
+.media a i{
+   display: block;
+outline: 1px black solid;
+transition: .4s;
+}
+
+.media a:hover i{
+               transform: scale(1.5);
+}
+
+.facebook i{
+display: inline-block;
+}
+
+.twitter{
+display: inline-block;
+}
+
+
+.bot-footer{
+width: 1200px;
+height: 108px;
+/* border-top: 1px solid  red; */
+display: inline-flex;
+}
+
+.copyright{
+/* border-right: 1px solid #FFFFFF;  */
+width: 400px;
+height: 108px;
+line-height: 108px;
+font-family: 'Days One';
+
+font-size: 20px;
+color: #FFFFFF;
+}
+
+.copyright b{
+font-weight: 1000;
+}
+
+.annoucement{
+width: 800px;
+height: 108px;
+line-height: 108px;
+text-align: center; 
+font-family: 'Delius Unicase';
+font-style: normal;
+font-weight: 1000;
+font-size: 18px;
+color: #FFFFFF;  
+}
+
+.spaceforlayout{
+    display: none;
+}
+
+/* screen 414-------------------------------------------------------------------- */
+@media screen and (max-width: 414px){
+    /* totop 紙飛機 */
+.totop{
+       bottom: 25%;
+       right: 1%;
+       position: fixed;
+       /* transition: .5s; */
+       background: rgb(26 26 25 / 30%);
+       border-radius: 8%;
+}
+     
+.totop img{
+            width: 50px; 
+}
+     
+.totop span{
+            display: none;    
+            color: #E2C286;
+            font-size: 28px;
+            font-weight: bolder;
+            outline: 3px dotted;
+}
+    
+    /* 頁尾部份414px */
+.end-of-the-page{
+                  display: flex;
+                  margin-top: 40px;       
+}
+    
+.footer-container{
+                   width: auto;
+                   height: auto;
+                   display: block;
+}
+    
+.top-footer{
+            width: 414px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+}
+    
+.logowrapper{
+             width: auto;
+             height: auto;
+             padding-top: 8px;
+}
+    
+.logowrapper img{
+                 width: 68px;
+}
+    
+.manuwrapper, .mediawrapper{
+                            display: none;   
+}
+    
+.ty-search{
+           padding: 10px;
+           border-style: hidden;
+           border-radius: 50px;
+           font-size: 14px;
+           background-color: beige;
+           box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+           width: 314px; 
+}
+    
+.ty-search:focus{
+                 outline: none;
+}
+    
+.ty-submit{
+           background-color: beige;
+           padding: 8px;
+           border-style: hidden;
+           border-radius: 38%;
+           margin-left: 18px;
+           font-weight: 900;
+           color: black;
+           box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+           display: none;
+}
+    
+.bot-footer{
+            width: 414px;
+            height: auto;
+            display: flex;
+}
+    
+.copyright{
+            width: 48%;
+            height: auto;
+            line-height: 30px;
+            font-family: 'Days One';
+            color: #FFFFFF;
+            padding-top: 11px;
+}
+    
+.annoucement{
+             width: 48%;
+             height: 108px;
+             line-height: 26px;
+             text-align: center; 
+             font-family: 'Delius Unicase';
+             font-style: normal;
+             font-weight: 600;
+             font-size: 16px;
+             color: #FFFFFF;
+             padding-top: 15px;  
+}
+    
+.logowrapper{
+             font-size: 16px;   
+}
+    
+}
