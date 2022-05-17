@@ -6,10 +6,12 @@ body{
      background-position: center center;
      background-size: cover;
      background-attachment:fixed;
+     overflow-x: hidden;
 }
 
 html{
      scroll-behavior: smooth;
+     overflow-x: hidden;
 }
 
 .mid-bg-dressing{
@@ -322,7 +324,7 @@ html{
         text-align: center;
         position: relative;
         /* top:2px */
-        background-color: rgb(226, 194, 134);
+        background-color: rgb(44 50 54);
 }
 
 .spaceforlayout a{
@@ -351,6 +353,11 @@ html{
     width: 400px;
     height: 108px;
     
+}
+
+.logowrapper img{
+                 width: 80px;
+                 padding-top: 12px;     
 }
 
 .manuwrapper{
@@ -874,6 +881,7 @@ body{
     width: auto;
     height: auto;
     padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .logowrapper img{
@@ -913,7 +921,7 @@ display: none;
 .bot-footer{
    width: 414px;
    height: auto;
-   display: flex;
+   display: none;
 }
 
 .copyright{

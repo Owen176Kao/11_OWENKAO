@@ -1,19 +1,28 @@
-.bgcover{
-    background-image: url("./image/main_bg.jpg");
-    position: absolute;
-    z-index: -1000;
-    width: 100%;
-    height: 2652px;
+@import url(reset.css);
+
+body{
+    background-image: url("../image/main_bg.jpg");
+    position: relative;
+    /* background-color: #000000; */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    filter: blur(20px);    
+    background-attachment:fixed;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#totop{
+      display: block;
 }
 
 /* slogan環境設置 */
 .slogan-p5{
            position: absolute;
            left: 50%;
+           top: 5%;
            transform: translateX(-384px);
            width: 768px;
            height: 162px;
@@ -95,6 +104,11 @@
 
 .gb img{
         width: 130px;
+        transition: 0.3s;
+}
+
+.gb img:hover{
+              transform: scale(.8);
 }
 
 /* 課程內容展示 */
@@ -181,6 +195,7 @@
            width: 1000px;
            height: 200px;
            position: relative; 
+           z-index: -1;
 }
 
 .section-6::before{
@@ -214,3 +229,538 @@
                  left: 166px;
 }
 
+/* totop 紙飛機 */
+.totop{
+    width: auto;
+    bottom: 60%;
+    right: 5%;
+    position: fixed;
+    text-align: center;
+    transition: .5s;
+}
+
+.totop img{
+    width: 50px; 
+}
+
+.totop span{
+         display: block;    
+         color: #E2C286;
+         font-size: 28px;
+         font-weight: bolder;
+         outline: 3px dotted;
+}
+
+/* 頁尾部份 */
+.end-of-the-page{
+              width: 100%;
+              text-align: center;
+              position: relative;
+              /* top:2px */
+              background-color: rgb(44 50 54);
+}
+
+.spaceforlayout a{
+               display: block;
+               width: 50px;
+               height: 94px;
+               margin: 0 auto;
+               padding-top: 10px;
+               box-sizing: border-box;
+}
+
+.footer-container{
+               width: 1200px;
+               height: 216px;
+               display: inline-block;
+}
+
+.top-footer{
+         width: 1200px;
+         height: 108px;
+         display: inline-flex;
+}
+
+.logowrapper{
+          /* border-right: 1px black solid; */
+          width: 400px;
+          height: 108px;
+}
+
+.logowrapper img{
+              width: 80px;
+              padding-top: 12px;     
+}
+
+.manuwrapper{
+          /* outline: 1px green solid; */
+          width: 400px;
+          height: 108px;
+}
+
+.manuwrapper form{
+               padding-top: 40px;
+}
+
+.ty-search{
+        padding: 10px;
+        border-style: hidden;
+        border-radius: 50px;
+        font-size: 14px;
+        background-color: beige;
+        box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+        width: 314px; 
+}
+
+.ty-search:focus{
+              outline: none;
+}
+
+.ty-submit{
+        background-color: beige;
+        padding: 8px;
+        border-style: hidden;
+        border-radius: 38%;
+        margin-left: 18px;
+        font-weight: 900;
+        color: black;
+        box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+        display: none;
+}
+
+.manuwrapper i{
+            color: #6f4835;
+            font-size: 24px;
+            transition: .4s;
+            padding-left: 12px;
+}
+
+.manuwrapper i:hover{
+                  transform: scale(1.5);                 
+}
+
+.mediawrapper{
+           width: auto;
+           height: 108px;
+           box-sizing: border-box;
+           font-size: 38px;
+           letter-spacing: 8px;
+           line-height: 108px;
+           padding-left: 14%;
+           padding-top: 10px;
+}
+
+.media{
+    display: flex; 
+}
+
+.media a{
+      /* outline: 1px black solid; */
+      font-size: 12px;
+}
+
+.social{
+     display : inline-block;
+     width : 56px;
+     height : 56px;
+     padding : 8px;
+     border-radius:100%;
+     background-color : white;
+     margin:10px;
+     transition: all 0.5s ease-in-out;
+}
+
+.social svg{
+         transition: 0.5s ease-out;
+}
+
+.social:hover{
+           border-radius:10%;
+           transform: rotate(405deg);
+}
+
+.social:hover svg{
+               transform: rotate(315deg);
+}
+   
+.facebook{
+       fill: #3b5998;
+}
+
+.facebook:hover{
+             fill:white;
+             background: #3b5998;
+}
+
+.twitter{
+  fill: #4099FF;
+}
+
+.twitter:hover{
+            fill:white;
+        background:#4099FF;
+}
+
+.googleplus{
+         fill: #d34836;
+}
+
+.googleplus:hover{
+               fill:white;
+           background:#d34836;
+}
+
+.bot-footer{
+         width: 1200px;
+         height: 108px;
+         /* border-top: 1px solid  red; */
+         display: inline-flex;
+}
+
+.copyright{
+        /* border-right: 1px solid #FFFFFF;  */
+        width: 400px;
+        height: 108px;
+        line-height: 108px;
+        font-family: 'Days One';
+
+        font-size: 20px;
+        color: #FFFFFF;
+}
+
+.copyright b{
+          font-size: 16px;
+          font-weight: 600;
+}
+
+.annoucement{
+          width: 800px;
+          height: 108px;
+          line-height: 108px;
+          text-align: center; 
+          font-family: 'Delius Unicase';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #FFFFFF;  
+}
+
+.spaceforlayout{
+             display: none;
+}
+
+/* screen 414-------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 414px){
+
+    html{
+         font-size: 62.5%;
+    }
+
+    body{
+         background-image: url(../image/logo-darkblue.svg);
+         background-repeat: no-repeat;
+         background-size: 200px;
+         background-position: center center;
+         background-attachment: fixed;
+    }
+
+/* slogan環境設置 */
+.slogan-p5{
+           left: 0;
+           top: 2.5%;
+           transform: unset;
+           width: 100%;
+           font-weight: 700;
+           font-size: 2.5rem;
+           text-align: center;
+           background: rgba(220, 220, 196, .4);
+}
+
+/* 網站佈局用 */
+.spacelayout-p5{
+                width: 100%;
+                height: 160px;
+}
+
+/* 置中用父層 */
+.mainarea-wrapper-p5{
+              width: 100%;
+              height: 2200px;
+              margin: 0 auto;                    
+}
+
+/* 救援篇幅不對稱 */
+.saver{
+width: auto;
+margin: 0 auto;
+margin-left: -10%;
+/* background-color: rgba(220, 220, 196, 0.4);  */
+
+}
+
+.mainarea-p5{
+             background-color: rgba(220, 220, 196, 0.0);            
+} 
+
+/* 個別調整文字樣式 */
+.mainarea-p5 h1{
+         font-weight: 1000;
+         font-size: 30px;
+         line-height: 38px;
+         letter-spacing: 0.1em;
+         padding-top: 58px;
+         padding-left: 58px;
+}
+
+.mainarea-p5 h3{
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 25px;
+         letter-spacing: 0.3em;
+         padding-left: 58px;
+         padding-top: 26px;
+}
+
+.pp{
+font-size: 1.6rem;
+}
+
+/* 調整bottom樣式 */
+.gb{
+    padding-left: 21%;
+    margin-top: 12%;
+}
+
+.gb img{
+ width: 100px;
+ transition: 0.3s;
+}
+
+.gb img:hover{
+       transform: scale(.8);
+}
+
+/* 課程內容展示 */
+.section-1{
+           width: 100%;
+           margin-top: 25px; 
+}
+
+.lessonbox-1{
+             width: 150px;   
+             right: 4%;
+             top: 68%;
+             box-shadow: 6px 8px 4px rgb(0 0 0 / 80%);
+}
+
+.yellowblock{
+      display: block;             
+      position: absolute;
+      z-index: -1;
+      right: -95px;
+      top: 72px;
+}
+
+.section-2{
+    width: auto;
+    height: 400px;
+    position: relative;   
+}
+
+.lessonbox-2{
+             width: 150px;   
+             right: 4%;
+             top: 68%;
+             box-shadow: 6px 8px 4px rgb(0 0 0 / 80%);
+
+}
+
+.section-3{
+    width: auto;
+    height: 400px;
+    position: relative;  
+}
+
+.lessonbox-3{
+             width: 150px;   
+             right: 4%;
+             top: 68%;
+             box-shadow: 6px 8px 4px rgb(0 0 0 / 80%);
+
+}
+
+.section-4{
+    width: auto;
+    height: 400px;
+    position: relative;  
+}
+
+.lessonbox-4{
+             width: 150px;   
+             right: 4%;
+             top: 68%;
+             box-shadow: 6px 8px 4px rgb(0 0 0 / 80%);
+}
+
+.section-5{
+    width: auto;
+    height: 400px;
+    position: relative;  
+}
+
+.lessonbox-5{
+             width: 150px;   
+             right: 4%;
+             top: 68%;
+             box-shadow: 6px 8px 4px rgb(0 0 0 / 80%);
+}
+
+.section-6{
+    /* outline: 1px solid olivedrab;  */
+    width: auto;
+    height: 200px;
+    position: relative; 
+    z-index: -1;
+}
+
+.section-6::before{
+            left: 10%;
+            width: 300px;
+}
+
+.section-6::after{
+                  left: 24%;
+                  width: 300px;
+}
+
+.decoration-line{
+                 width: 300px;
+                 border: 2px solid #E2C286;
+                 left: 33%;
+}
+
+h1{
+   font-size: 2.5rem;
+   text-align: center; 
+}
+
+h3{
+   font-size: 1.8rem;
+   text-align: center; 
+}
+
+    /* totop 紙飛機 */
+.totop{
+    bottom: 25%;
+    right: 1%;
+    position: fixed;
+    /* transition: .5s; */
+    background: rgb(26 26 25 / 30%);
+    border-radius: 8%;
+
+}
+
+.totop img{
+         width: 50px; 
+}
+
+.totop span{
+          display: none;    
+          color: #E2C286;
+          font-size: 28px;
+          font-weight: bolder;
+          outline: 3px dotted;
+}
+
+/* 頁尾部份414px */
+.end-of-the-page{
+              display: flex;
+              margin-top: 0px;       
+}
+
+.footer-container{
+               width: auto;
+               height: auto;
+               display: block;
+}
+
+.top-footer{
+         width: 414px;
+         height: auto;
+         display: flex;
+         justify-content: center;
+}
+
+.logowrapper{
+          width: auto;
+          height: auto;
+          padding-top: 8px;
+          padding-bottom: 8px;
+}
+
+.logowrapper img{
+              width: 68px;
+}
+
+.manuwrapper, .mediawrapper{
+                         display: none;   
+}
+
+.ty-search{
+padding: 10px;
+border-style: hidden;
+border-radius: 50px;
+font-size: 14px;
+background-color: beige;
+box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+width: 314px; 
+}
+
+.ty-search:focus{
+     outline: none;
+}
+
+.ty-submit{
+background-color: beige;
+padding: 8px;
+border-style: hidden;
+border-radius: 38%;
+margin-left: 18px;
+font-weight: 900;
+color: black;
+box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+display: none;
+}
+
+.bot-footer{
+         width: 414px;
+         height: auto;
+         display: none;
+}
+
+.copyright{
+        width: 48%;
+        height: auto;
+        line-height: 30px;
+        font-family: 'Days One';
+        color: #FFFFFF;
+        padding-top: 11px;
+}
+
+.annoucement{
+          width: 48%;
+          height: 108px;
+          line-height: 26px;
+          text-align: center; 
+          font-family: 'Delius Unicase';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #FFFFFF;
+          padding-top: 15px;  
+}
+
+.logowrapper{
+          font-size: 16px;   
+}
+}

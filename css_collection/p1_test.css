@@ -15,7 +15,7 @@ html{
 }
 
 #totop{
-        display: block;
+       display: block;
 }
 
 .img-creation{
@@ -41,11 +41,11 @@ html{
 }
 
 div.embedyoutube iframe{
-  position: absolute;
-  top: -4%;
-  left: 0;
-  width: 100%;
-  height: 100%;
+                        position: absolute;
+                        top: -4%;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
 }
 
 /* 主商頁內容部分 */
@@ -574,7 +574,7 @@ div.embedyoutube iframe{
                  text-align: center;
                  position: relative;
                  /* top:2px */
-                 background-color: rgb(226, 194, 134);
+                 background-color: rgb(44 50 54);
 }
 
 .spaceforlayout a{
@@ -602,7 +602,11 @@ div.embedyoutube iframe{
              /* border-right: 1px black solid; */
              width: 400px;
              height: 108px;
-             
+}
+
+.logowrapper img{
+                 width: 80px;
+                 padding-top: 12px;     
 }
 
 .manuwrapper{
@@ -616,13 +620,13 @@ div.embedyoutube iframe{
 }
 
 .ty-search{
-        padding: 10px;
-        border-style: hidden;
-        border-radius: 50px;
-        font-size: 14px;
-        background-color: beige;
-        box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
-        width: 314px; 
+           padding: 10px;
+           border-style: hidden;
+           border-radius: 50px;
+           font-size: 14px;
+           background-color: beige;
+           box-shadow: 1px 2px 3px 0px rgb(85 83 83 / 30%);
+           width: 314px; 
 }
 
 .ty-search:focus{
@@ -684,7 +688,7 @@ div.embedyoutube iframe{
 }
 
 .social svg{
-            transition: transform 0.5s ease-out;
+            transition: 0.5s ease-out;
 }
 
 .social:hover{
@@ -791,7 +795,7 @@ body{
               width: 100%;
               padding-top: calc(100% * 9 / 16);
               position: static;
-              margin-top: -371px;
+              margin-top: -169px;
 }
 
 div.embedyoutube iframe{
@@ -1004,6 +1008,7 @@ div.embedyoutube iframe{
              width: auto;
              height: auto;
              padding-top: 8px;
+             padding-bottom: 8px;
 }
 
 .logowrapper img{
@@ -1043,7 +1048,7 @@ width: 314px;
 .bot-footer{
             width: 414px;
             height: auto;
-            display: flex;
+            display: none;
 }
 
 .copyright{

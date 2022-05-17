@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1216咖啡</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../image/mainlogo-gold.png" type="image/x-icon"/>
     <link rel="stylesheet" href="../css_collection/p2.css">
     <link rel="stylesheet" href="../css_collection/header.css">
-    <link rel="icon" href="../image/mainlogo-gold.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/5e4928653b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -140,7 +141,7 @@
 </div>
 
 <!-- 故事第一章 -->
-<div class="wrapper-1">
+<div class="wrapper-1" data-aos="fade-right">
 
     <div class="story-1">
         <div class="story-1-left">
@@ -155,7 +156,7 @@
 </div>
 
  <!-- 故事第二章 -->
-<div class="wrapper-2">
+<div class="wrapper-2" data-aos="fade-left">
     <div class="story-2">
         <div class="story-2-left"></div>
         <div class="story-2-mid">
@@ -169,7 +170,7 @@
 </div>    
 
 <!-- 故事第三章 -->
-<div class="wrapper-3">
+<div class="wrapper-3" data-aos="fade-right">
 
     <div class="story-3">
         <div class="story-3-left">
@@ -184,7 +185,7 @@
 </div>
 
 <!-- 故事第四章  -->
-<div class="wrapper-4">
+<div class="wrapper-4" data-aos="fade-left">
 
     <div class="story-4">
         <div class="story-4-left"></div>
@@ -210,7 +211,7 @@
 
             <div class="logowrapper">
                 <picture>
-                    <source srcset="../image/mianlogo-darkblue.png" type="image/webp" media="(max-width: 414px)">
+                    <source srcset="../image/mainlogo-gold.png" type="image/webp" media="(max-width: 414px)">
                 <img src="../finalversion/simplelogo.svg" alt="">
             </picture>
             </div>
@@ -249,6 +250,9 @@
 
     
     <script>
+
+    
+
         //變數抓取
         var hamburger = document.querySelector(".hamburger"); //抓漢堡logo
         var menu_menu = document.querySelector(".main-menu");   //抓主選單
@@ -343,6 +347,10 @@
         //     if(side.menu)
         // })
       </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../css_collection/ppaos.js"></script>
     
 </body>
 </html>
