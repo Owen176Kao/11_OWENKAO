@@ -150,13 +150,6 @@ html{
               margin-top: 68px;
 }
 
-.detailbottom3{
-               display: block;
-               width: 93px;
-               margin: 0 auto;
-               margin-top: 66px;             
-}
-
 /* 主區塊下半部 */
 .maincontent-down{
                   display: flex;
@@ -262,13 +255,6 @@ html{
            width: 330px;
            margin: 0 auto;
            margin-top: 70px;
-}
-
-.detailbottom4, .detailbottom5, .detailbottom6{
-                                               display: block;
-                                               width: 93px;
-                                               margin: 0 auto;
-                                               margin-top: 68px;
 }
 
 .top1-1, .top2-1, .top3-1{
@@ -549,17 +535,10 @@ flex-direction: column;
 }
 
 .detailbottom{
-display: block;
+display: none;
 width: 93px;
 margin: 0 auto;
 margin-top: 68px;
-}
-
-.detailbottom3{
-display: block;
-width: 93px;
-margin: 0 auto;
-margin-top: 66px;             
 }
 
 /* 主區塊下半部 */
@@ -668,13 +647,6 @@ display: block;
 width: 330px;
 margin: 0 auto;
 margin-top: 70px;
-}
-
-.detailbottom4, .detailbottom5, .detailbottom6{
-                              display: block;
-                              width: 93px;
-                              margin: 0 auto;
-                              margin-top: 68px;
 }
 
 .top1-1, .top2-1, .top3-1{
